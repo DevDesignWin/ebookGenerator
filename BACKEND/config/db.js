@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(`${process.env.MONGO_URI}/ebook_creator`, {});
+    await mongoose.connect(`${process.env.MONGO_URI}/ebookgenerator`, {});
     console.log("Mongoose connected");
   } catch (error) {
     console.error("Error connecting to MongoDB", error);
